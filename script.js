@@ -55,7 +55,7 @@ const removeMatch = (MatchesToRemove) => {
 // Fonction qui teste si partie terminée :
 const didIWin = () => {
     if (numberOfMatches == 0) {
-        victoryDiv.style.display = 'block';
+        victoryDiv.style.display = 'flex';
         gamePage.style.display = "none";
         congratulationsText.innerText = `BRAVO Joueur n°${player} ! Tu as gagné ! 🎉`;
         playerPage.style.display = "none";
@@ -75,12 +75,17 @@ startButton.addEventListener('click', () => {
 
 validButton.addEventListener('click', () => {
     const MatchesToRemove = document.querySelector('#matches-to-remove').value;
-    if (removeMatch(MatchesToRemove)) {
-        nextPlayer();
-        console.log(player)
+    if (MatchesToRemove == "") {
+        MatchesToRemove.focus()
+    } else {
+        if (removeMatch(MatchesToRemove) && numberOfMatches != 0) {
+            nextPlayer();
+            console.log(player)
+        }
+        didIWin();
+        playerName.innerText = `Joueur n°${player},`
+
     }
-    didIWin();
-    playerName.innerText = `Joueur n°${player},`
 })
 
 resetButton.addEventListener('click', () => {
