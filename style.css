@@ -27,7 +27,7 @@ input {
 }
 
 /* TETE DE PAGE */
-#presentation-page {
+#welcome-page {
     background-color: brown;
     display: grid;
     text-align: center;
@@ -35,7 +35,7 @@ input {
 h1 {
     font-size: 40px;
 }
-#presentation-page p {
+#welcome-page p {
     font-size: 18px;
 }
 
@@ -45,7 +45,7 @@ h1 {
     margin: 10px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.7);
 }
 
 /* PAGE JOUEUR */
@@ -55,7 +55,7 @@ h1 {
     padding: 10px;
     text-align: center;
     background-color: rgb(165, 42, 42, 0.7),;
-
+    display: none;
 }
 
 /* PAGE DE JEU */
@@ -65,8 +65,8 @@ h1 {
     padding: 10px;
     text-align: center;
     z-index: 10;
-    background-color: rgb(255, 255, 255, 0.5);
-    /* opacity: 0.5; */
+    background-color: rgb(255, 255, 255, 0.7);
+    display: none;
 }
 label {
     width: 100%;
@@ -77,6 +77,12 @@ label {
     font-size: 19px;
 }
 #victory {
+    border: solid 3px black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+    background-color: rgb(255, 255, 255, 0.7);
     display: none;
 }
 #victory>p {
