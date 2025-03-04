@@ -1,0 +1,93 @@
+/* GENERAL */
+body  {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    box-sizing: border-box;
+    background-image: url(./images/fire_background.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: bold;
+}
+button {
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+}
+input {
+    height: 30px;
+}
+
+/* TETE DE PAGE */
+#presentation-page {
+    background-color: brown;
+    display: grid;
+    text-align: center;
+}
+h1 {
+    font-size: 40px;
+}
+#presentation-page p {
+    font-size: 18px;
+}
+
+/* PAGE D'ACCUEIL (SELECTION NBRE JOUEURS) */
+#number-of-player-page {
+    border: solid 3px black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+/* PAGE JOUEUR */
+#player-page {
+    border: solid 3px black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(165, 42, 42, 0.7),;
+
+}
+
+/* PAGE DE JEU */
+#game-page {
+    border: solid 3px black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+    background-color: rgb(255, 255, 255, 0.5);
+    /* opacity: 0.5; */
+}
+label {
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+#game-page>p {
+    font-size: 19px;
+}
+#victory {
+    display: none;
+}
+#victory>p {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+#victory>button {
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+
+

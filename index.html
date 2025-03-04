@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Le jeu des allumettes</title>
+</head>
+
+<body>
+    <div id="presentation-page">
+        <h1>Le jeu des allumettes<br>🔥🔥🔥
+        </h1>
+        <p>Bienvenue dans le jeu des allumettes. Le but du jeu est très simple :<br>
+            Au départ, il y a un tas de 50 allumettes. Chacun à leur tour, les joueurs ôtent obligatoirement entre 1 et
+            6
+            allumettes. Celui qui ôte la dernière allumette gagne.</p>
+    </div>
+
+    <div id="number-of-player-page">
+        <label for="number-of-players" class="bold">Combien de joueurs vont jouer ?<br><br></label>
+        <input type="number" name="number-of-players" id="number-of-players">
+        <button type="submit" id="start-button">Commencer la partie</button>
+    </div>
+
+    <div id="player-page">
+        <h2 id="player-name" class="bold"></h2>
+        <h2>à toi de jouer !</h2>
+    </div>
+
+    <div id="game-page">
+        <label for="matches-to-remove" class="bold">Combien d'allumettes veux-tu retirer ?<br>
+            <span class="italic">(Tu dois retirer entre 1 et 6 allumettes)</span><br><br></label>
+        <input type="number" name="matches-to-remove" id="matches-to-remove">
+        <button type="submit" id="valid-button">Valider</button>
+        <div id="wrong-number"></div>
+        <p class="italic" id="remaining-matches">Nombre d'allumettes restantes : 50.</p>
+        <div id="victory">
+            <p>BRAVO ! Tu as gagné ! 🎉</p><br>
+            <button id="reset-button">Rejouer</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
