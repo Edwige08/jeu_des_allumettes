@@ -35,7 +35,7 @@ const nextPlayer = () => {
 
 // Fonction qui retire les allumettes :
 const removeMatch = (MatchesToRemove) => {
-    if (MatchesToRemove > 6) {
+    if (MatchesToRemove > 6 || MatchesToRemove == 0) {
         wrongNumber.innerText = `Tu ne peux pas retirer ${MatchesToRemove} allumettes. Choisis un autre nombre.`;
         return false;
     } else if (MatchesToRemove > numberOfMatches) {
