@@ -25,14 +25,7 @@ h2 {
     text-shadow: 2px 2px 4px grey;
 }
 
-/* button {
-    border-radius: 5px;
-    height: 40px;
-    width: 150px;
-} */
-
-
-/* CSS */
+/* BOUTON */
 button {
   align-items: center;
   appearance: none;
@@ -163,10 +156,11 @@ h1 {
     margin-top: 7px;
 }
 #welcome-page p {
-    font-size: 25px;
-    font-family: "Moon Dance", cursive;
-    font-weight: 600;
+    font-size: 22px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
     font-style: normal;
+    margin-top: 0;
 }
 
 /* PAGE D'ACCUEIL (SELECTION NBRE JOUEURS) */
